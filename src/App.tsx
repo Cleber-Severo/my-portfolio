@@ -3,25 +3,23 @@ import Header from './components/Header';
 import { useApp } from './hooks/useApp';
 
 const App = () => {
-  const { containerRef } = useApp()
+  const { containerRef } = useApp();
 
   return (
-    <div>
+    <div className="container" ref={containerRef}>
       <Header containerRef={containerRef} />
-      <div className="container" ref={containerRef}>
-        <section id="section1" style={{ backgroundColor: '#f0f8ff' }}>
-          <h1>Seja Bem-Vindo ao meu portfolio!</h1>
-        </section>
-        <section id="section2" style={{ backgroundColor: '#faebd7' }}>
-          <h1>Projetos Section</h1>
-        </section>
-        <section id="section3" style={{ backgroundColor: '#e0ffff' }}>
-          <h1>Experiences Section</h1>
-        </section>
-        <section id="section4" style={{ backgroundColor: '#e0ffff' }}>
-          <h1>Contact me section</h1>
-        </section>
-      </div>
+      <section id="section1">
+        <h1>Seja Bem-Vindo ao meu portfolio!</h1>
+      </section>
+      <section id="section2">
+        <h1>Projetos Section</h1>
+      </section>
+      <section id="section3">
+        <h1>Experiences Section</h1>
+      </section>
+      <section id="section4">
+        <h1>Contact me section</h1>
+      </section>
     </div>
   );
 };

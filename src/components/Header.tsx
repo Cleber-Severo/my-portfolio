@@ -1,4 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import { SiGithub } from '@react-icons/all-files/si/SiGithub';
+import React, { useEffect, useState } from 'react';
+
+import './styles/Header.css'
 
 interface IHeaderProps {
   containerRef: React.MutableRefObject<HTMLDivElement | null>;
@@ -19,16 +22,28 @@ const Header = ({ containerRef }: IHeaderProps) => {
     return () => {
       container?.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [containerRef]);
 
   return (
-    <nav className={isScrolled ? 'scrolled' : ''}>
-      <a href="#section1">Home</a>
-      <a href="#section2">Projetos</a>
-      <a href="#section3">Experiences</a>
-      <a href="#section4">Contact me</a>
-    </nav>
+    <header className={isScrolled ? 'scrolled' : ''}>
+      <div>Cléber Severo</div>
+      <nav>
+        <a href="#section1">Home</a>
+        <a href="#section2">Projetos</a>
+        <a href="#section3">Experiences</a>
+        <a href="#section4">Contact me</a>
+      </nav>
+      <div>
+        <a
+          href="https://github.com/Cleber-Severo"
+          style={{ color: 'white' }}
+          target="_blank"
+        >
+          <SiGithub style={{ fontSize: '1.4rem' }} />
+        </a>
+      </div>
+    </header>
   );
 };
 
-export default Header
+export default Header;

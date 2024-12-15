@@ -125,11 +125,30 @@ table {
   border-spacing: 0;
 }
 
+/* Ensure all elements include padding in their width/height */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --default-font-family: "Nunito Sans", sans-serif;
   --header-height: 3rem;
+  --defaul-bg-dark: #0D1117;
+  --default-main-text: #FFFFFF;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent body scroll if using JS animations */
 }
 
 html {
+  background-color: var(--defaul-bg-dark);
+  color: var(--default-main-text);
   font-family: var(--default-font-family);
 }
