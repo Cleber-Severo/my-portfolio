@@ -1,63 +1,16 @@
-import { useEffect, useRef, useState } from 'react';
 import './App.css';
+import Header from './components/Header';
+import { useApp } from './hooks/useApp';
 
 const App = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const containerRef = useRef<HTMLDivElement | null>(null); // Reference to the scrollable container
-
-  useEffect(() => {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('nav a');
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            navLinks.forEach((link) => {
-              link.classList.toggle(
-                'active',
-                link.getAttribute('href') === `#${entry.target.id}`
-              );
-            });
-            entry.target.classList.add('visible');
-          } else {
-            entry.target.classList.remove('visible');
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (containerRef.current) {
-        setIsScrolled(containerRef.current.scrollTop > 0);
-      }
-    };
-    const container = containerRef.current;
-    container?.addEventListener('scroll', handleScroll);
-
-    return () => {
-      container?.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const { containerRef } = useApp()
 
   return (
     <div>
-      <nav className={isScrolled ? 'scrolled' : ''}>
-        <a href="#section1">Home</a>
-        <a href="#section2">Projetos</a>
-        <a href="#section3">Experiences</a>
-        <a href="#section4">Contact me</a>
-      </nav>
+      <Header containerRef={containerRef} />
       <div className="container" ref={containerRef}>
         <section id="section1" style={{ backgroundColor: '#f0f8ff' }}>
-          <h1>Home SSection</h1>
+          <h1>Seja Bem-Vindo ao meu portfolio!</h1>
         </section>
         <section id="section2" style={{ backgroundColor: '#faebd7' }}>
           <h1>Projetos Section</h1>
