@@ -22,7 +22,7 @@ nav {
 
 header.scrolled {
   backdrop-filter: blur(4px);
-  box-shadow: 0 4px 6px rgba(3, 3, 3, 0.6); /* Subtle black shadow */
+  box-shadow: 0 4px 6px rgba(3, 3, 3, 0.3); /* Subtle black shadow */
 }
 
 nav a {
