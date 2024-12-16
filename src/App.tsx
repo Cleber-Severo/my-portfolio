@@ -1,4 +1,5 @@
 import './App.css';
+import { Animation } from './components/Animation';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import { useApp } from './hooks/useApp';
@@ -8,6 +9,7 @@ const App = () => {
 
   return (
     <div className="container" ref={containerRef}>
+      <Animation />
       <Header containerRef={containerRef} />
       <Hero />
       <section id="section2">
