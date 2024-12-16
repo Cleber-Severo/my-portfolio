@@ -28,7 +28,7 @@ const Header = ({ containerRef }: IHeaderProps) => {
     <header className={isScrolled ? 'scrolled' : ''}>
       <div>Cléber Severo</div>
       <nav>
-        <a href="#section1">Home</a>
+        <a href="#hero">Home</a>
         <a href="#section2">Projetos</a>
         <a href="#section3">Experiences</a>
         <a href="#section4">Contact me</a>
