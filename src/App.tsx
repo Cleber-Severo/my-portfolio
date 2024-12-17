@@ -11,16 +11,18 @@ const App = () => {
     <div className="container" ref={containerRef}>
       <Animation />
       <Header containerRef={containerRef} />
-      <Hero />
-      <section id="section2">
-        <h1>Projetos Section</h1>
-      </section>
-      <section id="section3">
-        <h1>Experiences Section</h1>
-      </section>
-      <section id="section4">
-        <h1>Contact me section</h1>
-      </section>
+      <main>
+        <Hero />
+        <section id="section2">
+          <h1>Projetos Section</h1>
+        </section>
+        <section id="section3">
+          <h1>Experiences Section</h1>
+        </section>
+        <section id="section4">
+          <h1>Contact me section</h1>
+        </section>
+      </main>
     </div>
   );
 };

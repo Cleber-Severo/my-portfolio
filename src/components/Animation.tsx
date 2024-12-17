@@ -20,12 +20,8 @@ export const Animation = () => {
         options={{
           background: {
             color: {
-              value: '#000000', // Fallback background color
+              value: 'transparent', // Fallback background color
             },
-            image: "radial-gradient(ellipse 90% 90% at 50% 10%, #1f1e48, #0D1117)", // Your gradient
-            position: "50% 50%",
-            repeat: "no-repeat",
-            size: "cover",
           },
           particles: {
             color: {
