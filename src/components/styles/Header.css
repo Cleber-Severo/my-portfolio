@@ -3,6 +3,8 @@ header {
   border-bottom: 1px solid transparent; /* No shadow when transparent */
   transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for both bg and shadow */
 
+  font-size: 20px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,6 +15,12 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
+}
+
+header > div.logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
 nav {

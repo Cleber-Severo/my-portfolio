@@ -1,4 +1,5 @@
 import { SiGithub } from '@react-icons/all-files/si/SiGithub';
+import { FiTerminal } from '@react-icons/all-files/fi/FiTerminal';
 import React, { useEffect, useState } from 'react';
 
 import './styles/Header.css'
@@ -12,21 +13,23 @@ const Header = ({ containerRef }: IHeaderProps) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (containerRef.current) {
-        setIsScrolled(containerRef.current.scrollTop > 0);
-      }
+
+        setIsScrolled(window.scrollY > 0);
+      
     };
-    const container = containerRef.current;
-    container?.addEventListener('scroll', handleScroll);
+    window?.addEventListener('scroll', handleScroll);
 
     return () => {
-      container?.removeEventListener('scroll', handleScroll);
+      window?.removeEventListener('scroll', handleScroll);
     };
   }, [containerRef]);
 
   return (
     <header className={isScrolled ? 'scrolled' : ''}>
-      <div>Cléber Severo</div>
+      <div className='logo'>
+        <FiTerminal />
+        Cléber Severo
+      </div>
       <nav>
         <a href="#hero">Home</a>
         <a href="#section2">Projetos</a>
