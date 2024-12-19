@@ -26,6 +26,7 @@ header > div.logo {
 nav {
   display: flex;
   align-items: center;
+    font-size: 16px;
 }
 
 header.scrolled {

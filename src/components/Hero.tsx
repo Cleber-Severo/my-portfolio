@@ -1,23 +1,32 @@
+import ProgrammingHero from '../assets/images/hero.png'
+import { IoIosArrowDown } from '@react-icons/all-files/io/IoIosArrowDown';
 
-import './styles/Hero.css'
+import './styles/Hero.css';
 
 const Hero = () => {
   return (
     <section id="hero">
-      <h1>Seja Bem-Vindo ao meu portfolio!</h1>
-      <button
-        style={{
-          backgroundColor: '#2ecc71',
-          padding: '1rem 2rem',
-          color: 'white',
-          borderRadius: '25px',
-          border: 'none',
-          fontWeight: '700',
-          cursor: 'pointer',
-        }}
-      >
-        Contact-me
-      </button>
+      <div>
+        <h2 style={{ letterSpacing: '12px' }}>Olá, meu nome é</h2>
+        <div className="typing-container">Cléber Severo</div>
+        <p>
+          Desenvolvedor de software com ampla experiência em construir
+          aplicações altamente escaláveis, focado na entrega de soluções ágeis e
+          eficientes que agregam valor ao cliente.
+        </p>
+        <p>Seja Bem-vindo ao meu portfólio</p>
+        <button>Contact-me</button>
+      </div>
+      <img
+        src={ProgrammingHero}
+        alt="Ilustração de um desenvolvedor"
+        className="hero-image"
+      />
+      <a href="#section2">
+        <div className="icon-wrap">
+          <IoIosArrowDown />
+        </div>
+      </a>
     </section>
   );
 };
