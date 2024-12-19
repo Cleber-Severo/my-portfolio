@@ -25,6 +25,18 @@ main, header {
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 1640px){   
+  main, header {
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (max-width: 1440px){   
+  main, header {
+    padding: 0 6rem;
+  }
+}
+
 
 header,
 .container {
