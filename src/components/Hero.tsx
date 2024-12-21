@@ -22,7 +22,7 @@ const Hero = () => {
         alt="Ilustração de um desenvolvedor"
         className="hero-image"
       />
-      <a href="#section2">
+      <a href="#projects">
         <div className="icon-wrap">
           <IoIosArrowDown />
         </div>

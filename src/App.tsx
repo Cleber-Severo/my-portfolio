@@ -2,6 +2,7 @@ import './App.css';
 import { Animation } from './components/Animation';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Projects from './components/Projects';
 import { useApp } from './hooks/useApp';
 
 const App = () => {
@@ -13,9 +14,7 @@ const App = () => {
       <Header containerRef={containerRef} />
       <main>
         <Hero />
-        <section id="section2">
-          <h1>Projetos Section</h1>
-        </section>
+        <Projects />
         <section id="section3">
           <h1>Experiences Section</h1>
         </section>

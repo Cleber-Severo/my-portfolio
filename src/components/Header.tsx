@@ -26,14 +26,14 @@ const Header = ({ containerRef }: IHeaderProps) => {
 
   return (
     <header className={isScrolled ? 'scrolled' : ''}>
-      <div className='logo'>
+      <div className="logo">
         <FiTerminal />
         Cléber Severo
       </div>
       <nav>
         <a href="#hero">Home</a>
-        <a href="#section2">Projetos</a>
-        <a href="#section3">Experiences</a>
+        <a href="#projects">Projetos</a>
+        <a href="#resume">Experiences</a>
         <a href="#section4">Contact me</a>
       </nav>
       <div>
