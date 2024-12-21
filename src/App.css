@@ -54,3 +54,7 @@ section {
 
   min-height: 650px;
 }
+
+main {
+  background-color: rgba(114, 114, 243, 0.2);
+}

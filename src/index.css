@@ -135,7 +135,7 @@ table {
 :root {
   --default-font-family: "Nunito Sans", sans-serif;
   --header-height: 3rem;
-  --defaul-bg-dark: #0D1117;
+  --defaul-bg-dark: #121821;
   --default-main-text: #FFFFFF;
 }
 
@@ -150,13 +150,13 @@ body {
 body {
   background: radial-gradient(
     ellipse 90% 90% at 50% 10%,
-    rgba(114, 114, 243, 0.3),
-    #0d1117
+    rgba(114, 114, 243, 0.4),
+    transparent
   );
   background-size: cover;
   background-attachment: fixed; /* Keeps the gradient in place */
   background-position: top center;
-    background-attachment: scroll; /* Makes the gradient scroll with the content */
+  background-attachment: scroll; /* Makes the gradient scroll with the content */
 }
 
 html {

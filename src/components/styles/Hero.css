@@ -8,6 +8,8 @@ section#hero {
   padding-left: 3rem;
   margin: 0 auto;
 
+  margin-bottom: 64px;
+
   position: relative;
 
   max-width: 1200px;
