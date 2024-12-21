@@ -12,6 +12,7 @@ section#hero {
 
   max-width: 1200px;
   width: 100%;
+  height: 100vh;
 }
 
 section#hero > div {
@@ -56,7 +57,7 @@ section#hero h2:nth-of-type(2) {
 
   white-space: nowrap;
   overflow: hidden;
-  border-right: 8px solid #f5f5f5;
+  border-right: 2px solid #b3b3b3;
   width: 0;
   animation: typing 8s steps(20, end) infinite,
     blink-cursor 0.8s step-end infinite;
@@ -77,7 +78,7 @@ section#hero h2:nth-of-type(2) {
 @keyframes blink-cursor {
   0%,
   50% {
-    border-right-color: #f5f5f5;
+    border-right-color: #b3b3b3;
   }
   100% {
     border-right-color: transparent;
@@ -85,22 +86,34 @@ section#hero h2:nth-of-type(2) {
 }
 
 section#hero .icon-wrap {
-  padding: 12px;
   text-align: center;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  border: 1px solid #e5e5e5;
   border-radius: 50%;
+
   width: 2.6rem;
   height: 2.6rem;
 
+  padding: 12px;
+
   position: absolute;
-  bottom: 12px;
+  bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 
-  animation: bounce 4s infinite cubic-bezier(0.25, 0.75, 0.5, 1) 2s; /* Slower with smoother cubic-bezier */
+  animation: pulse-animation 2s infinite, bounce 4s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
 }
 
 @keyframes bounce {
@@ -108,16 +121,16 @@ section#hero .icon-wrap {
     transform: translateX(-50%) translateY(0);
   }
   25% {
-    transform: translateX(-50%) translateY(-20px); /* Move up slightly */
+    transform: translateX(-50%) translateY(-10px);
   }
   50% {
-    transform: translateX(-50%) translateY(0); /* Back to original position */
+    transform: translateX(-50%) translateY(0);
   }
   75% {
-    transform: translateX(-50%) translateY(-20px); /* Move up again */
+    transform: translateX(-50%) translateY(-10px);
   }
   100% {
-    transform: translateX(-50%) translateY(0); /* Hold at original position */
+    transform: translateX(-50%) translateY(0);
   }
 }
 
@@ -126,4 +139,7 @@ section#hero .icon-wrap svg {
 
   font-size: 2rem;
   font-weight: 600;
+
+  border-radius: 50%;
+  transform-origin: center;
 }
