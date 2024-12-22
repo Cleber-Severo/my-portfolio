@@ -17,10 +17,13 @@ header {
   z-index: 1000;
 }
 
-header > div.logo {
+header > a.logo {
   display: flex;
   align-items: center;
   gap: 2px;
+
+  text-decoration: none;
+  color: white;
 }
 
 nav {
