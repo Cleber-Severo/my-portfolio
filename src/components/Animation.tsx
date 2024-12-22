@@ -20,7 +20,7 @@ export const Animation = () => {
         options={{
           background: {
             color: {
-              value: 'transparent', // Fallback background color
+              value: 'transparent',
             },
           },
           particles: {
@@ -28,11 +28,11 @@ export const Animation = () => {
               value: '#FFF',
             },
             links: {
-              enable: false, // Disable lines
+              enable: false,
             },
             move: {
               enable: true,
-              speed: 0.3, // Slow down particles
+              speed: 0.4,
               direction: 'none',
               outModes: {
                 default: 'bounce',
@@ -42,13 +42,13 @@ export const Animation = () => {
               density: {
                 enable: true,
               },
-              value: 80, // Adjust number of particles as needed
+              value: 80,
             },
             opacity: {
-              value: 0.7, // Adjust opacity
+              value: 0.7,
             },
             shape: {
-              type: 'circle', // Only dots (circles)
+              type: 'circle',
             },
             size: {
               value: { min: 1, max: 1 },
