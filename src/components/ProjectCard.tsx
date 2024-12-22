@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { FiExternalLink } from '@react-icons/all-files/fi/FiExternalLink';
+import { FiLink } from '@react-icons/all-files/fi/FiLink';
 
 import { FiGithub } from '@react-icons/all-files/fi/FiGithub';
 
@@ -32,7 +32,7 @@ const ProjectCard = ({
               <FiGithub />
             </a>
             <a href={url} target="_blank">
-              <FiExternalLink />
+              <FiLink />
             </a>
           </div>
         </div>
