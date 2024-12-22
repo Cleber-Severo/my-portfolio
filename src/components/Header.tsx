@@ -34,7 +34,7 @@ const Header = ({ containerRef }: IHeaderProps) => {
         <a href="#hero">Home</a>
         <a href="#projects">Projetos</a>
         <a href="#resume">Experiences</a>
-        <a href="#section4">Contact me</a>
+        <a href="#contact">Contact me</a>
       </nav>
       <div>
         <a

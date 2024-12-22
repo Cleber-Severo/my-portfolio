@@ -31,13 +31,31 @@ section#hero p {
 }
 
 section#hero button {
+  font-weight: 700;
   background-color: #5b5bf1;
-  padding: 1rem 2rem;
-  color: white;
+
   border-radius: 25px;
   border: none;
-  font-weight: 700;
+
   cursor: pointer;
+  padding: 1rem 2rem;
+
+  width: 45%;
+}
+
+section#hero button a {
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  text-decoration: none;
+}
+
+section#hero button a svg {
+  font-size: 1.2rem;
 }
 
 section#hero button:hover {

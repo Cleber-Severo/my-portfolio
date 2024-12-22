@@ -1,5 +1,6 @@
 import ProgrammingHero from '../assets/images/hero.png'
 import { IoIosArrowDown } from '@react-icons/all-files/io/IoIosArrowDown';
+import { IoMdArrowRoundForward } from '@react-icons/all-files/io/IoMdArrowRoundForward';
 
 import './styles/Hero.css';
 
@@ -15,7 +16,11 @@ const Hero = () => {
           eficientes que agregam valor ao cliente.
         </p>
         <p>Seja Bem-vindo ao meu portfólio</p>
-        <button>Contact-me</button>
+        <button>
+          <a href="#contact">
+            Contato <IoMdArrowRoundForward />
+          </a>
+        </button>
       </div>
       <img
         src={ProgrammingHero}

@@ -15,10 +15,10 @@ const App = () => {
       <main>
         <Hero />
         <Projects />
-        <section id="section3">
+        <section id="resume">
           <h1>Experiences Section</h1>
         </section>
-        <section id="section4">
+        <section id="contact">
           <h1>Contact me section</h1>
         </section>
       </main>
