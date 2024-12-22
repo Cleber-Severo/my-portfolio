@@ -1,4 +1,5 @@
 import { SiGithub } from '@react-icons/all-files/si/SiGithub';
+import { SiLinkedin } from '@react-icons/all-files/si/SiLinkedin';
 import { FiTerminal } from '@react-icons/all-files/fi/FiTerminal';
 import React, { useEffect, useState } from 'react';
 
@@ -38,11 +39,18 @@ const Header = ({ containerRef }: IHeaderProps) => {
       </nav>
       <div>
         <a
-          href="https://github.com/Cleber-Severo"
+          href="https://www.linkedin.com/in/cleber-severo/"
           style={{ color: 'white' }}
           target="_blank"
         >
-          <SiGithub style={{ fontSize: '1.4rem' }} />
+          <SiLinkedin style={{ fontSize: '1.4rem' }} />
+        </a>
+        <a
+          href="https://github.com/Cleber-Severo"
+          style={{ color: 'white', marginLeft: '8px'  }}
+          target="_blank"
+        >
+          <SiGithub style={{ fontSize: '1.4rem'}} />
         </a>
       </div>
     </header>
