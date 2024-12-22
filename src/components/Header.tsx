@@ -15,7 +15,7 @@ const Header = ({ containerRef }: IHeaderProps) => {
   useEffect(() => {
     const handleScroll = () => {
 
-        setIsScrolled(window.scrollY > 0);
+        setIsScrolled(window.scrollY > 130);
       
     };
     window?.addEventListener('scroll', handleScroll);
@@ -34,8 +34,8 @@ const Header = ({ containerRef }: IHeaderProps) => {
       <nav>
         <a href="#hero">Home</a>
         <a href="#projects">Projetos</a>
-        <a href="#resume">Experiences</a>
-        <a href="#contact">Contact me</a>
+        <a href="#resume">Experiência</a>
+        <a href="#contact">Contato</a>
       </nav>
       <div>
         <a
