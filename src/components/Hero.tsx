@@ -11,9 +11,8 @@ const Hero = () => {
         <h2 style={{ letterSpacing: '12px' }}>Olá, meu nome é</h2>
         <div className="typing-container">Cléber Severo</div>
         <p>
-          Desenvolvedor de software com ampla experiência em construir
-          aplicações altamente escaláveis, focado na entrega de soluções ágeis e
-          eficientes que agregam valor ao cliente.
+          Desenvolvedor de software com experiência em criar soluções ágeis e
+          escaláveis que transformam ideias em resultados.
         </p>
         <p>Seja Bem-vindo ao meu portfólio</p>
         <button>
@@ -26,6 +25,7 @@ const Hero = () => {
         src={ProgrammingHero}
         alt="Ilustração de um desenvolvedor"
         className="hero-image"
+        style={{ transform: 'translateX(30px)' }}
       />
       <a href="#projects">
         <div className="icon-wrap">
