@@ -51,6 +51,21 @@ const useProjectsData = () => {
         </>
       ),
     },
+    {
+      id: 4,
+      title: 'Ado Pet',
+      description: 'Site de Adoção de Pets',
+      url: 'https://adopet-lac-ten.vercel.app/',
+      githubUrl: 'https://github.com/Cleber-Severo/AdoPet',
+      img: 'images/adopet.png',
+      icons: (
+        <>
+          <FaCss3Alt />
+          <FaHtml5 />
+          <FaJs />
+        </>
+      ),
+    },
   ];
 
   return {
