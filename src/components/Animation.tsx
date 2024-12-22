@@ -32,7 +32,7 @@ export const Animation = () => {
             },
             move: {
               enable: true,
-              speed: 0.5, // Slow down particles
+              speed: 0.3, // Slow down particles
               direction: 'none',
               outModes: {
                 default: 'bounce',
@@ -45,7 +45,7 @@ export const Animation = () => {
               value: 80, // Adjust number of particles as needed
             },
             opacity: {
-              value: 0.8, // Adjust opacity
+              value: 0.7, // Adjust opacity
             },
             shape: {
               type: 'circle', // Only dots (circles)
