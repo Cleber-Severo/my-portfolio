@@ -1,5 +1,6 @@
 import './App.css';
 import { Animation } from './components/Animation';
+import Experiences from './components/Experiences';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
@@ -15,9 +16,7 @@ const App = () => {
       <main>
         <Hero />
         <Projects />
-        <section id="resume">
-          <h1>Experiences Section</h1>
-        </section>
+      <Experiences />
         <section id="contact">
           <h1>Contact me section</h1>
         </section>
