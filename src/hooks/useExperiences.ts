@@ -2,9 +2,9 @@ import React from 'react';
 import useExperiencesData from './useExperiencesData';
 
 const useExperiences = () => {
-  const [expanded, setExpanded] = React.useState<string | false>(false);
-
   const { experiences } = useExperiencesData();
+
+  const [expanded, setExpanded] = React.useState<string | false>(experiences[0].accordionPannel);
 
   const accordionToggleOpen =
     (panel: string) => (_: React.SyntheticEvent, isExpanded: boolean) => {
