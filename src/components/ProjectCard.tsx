@@ -1,17 +1,9 @@
-import { ReactElement } from 'react';
 import { FiLink } from '@react-icons/all-files/fi/FiLink';
 
 import { FiGithub } from '@react-icons/all-files/fi/FiGithub';
+import { IProjectCard } from '../types/Projects';
 
-interface IProjectCard {
-  id?: number;
-  title: string;
-  description: string;
-  img: string;
-  icons: ReactElement;
-  url: string;
-  githubUrl: string;
-}
+
 
 const ProjectCard = ({
   title,
@@ -21,6 +13,7 @@ const ProjectCard = ({
   url,
   githubUrl,
 }: IProjectCard) => {
+  
   return (
     <div className="project-card">
       <img src={img || ''} alt="Project 1" />
