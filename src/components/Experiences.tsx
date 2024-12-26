@@ -7,6 +7,7 @@ import { FaChevronUp } from '@react-icons/all-files/fa/FaChevronUp';
 import { FaMapMarkerAlt } from '@react-icons/all-files/fa/FaMapMarkerAlt';
 import useExperiencesData from '../hooks/useExperiencesData';
 import './styles/Experiences.css';
+import { Chip } from '@mui/material';
 
 const Experiences = () => {
   const [expanded, setExpanded] = React.useState<string | false>(false);
@@ -14,7 +15,7 @@ const Experiences = () => {
   const { experiences } = useExperiencesData();
 
   const handleChange =
-    (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+    (panel: string) => (_: React.SyntheticEvent, isExpanded: boolean) => {
       setExpanded(isExpanded ? panel : false);
     };
 
@@ -58,16 +59,19 @@ const Experiences = () => {
               sx={{
                 backgroundColor: 'rgba(114, 114, 243, 0.3)',
                 color: 'text.white',
-                p:3,
+                p: 3,
               }}
             >
-              <div style={{ color: '#ccc', marginBottom: '1rem' }}>
+              <div style={{ color: '#ccc' }}>
                 <FaMapMarkerAlt style={{ marginRight: '6px' }} />
                 {item.place}
               </div>
-              <Typography style={{ color: '#FFF' }}>
+              <Typography sx={{ color: '#FFF', my: '1rem', fontWeight: '500', }}>
                 {item.description}
               </Typography>
+              {item.tags.map((tag) => (
+                <Chip label={tag} sx={{color: '#FFF', ml: 0.5}}/>
+              ))}
             </AccordionDetails>
           </Accordion>
         ))}
