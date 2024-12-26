@@ -18,13 +18,17 @@ const ExperiencesAccordion = ({
     <Accordion
       expanded={expanded === data.accordionPannel}
       onChange={accordionToggleOpen(data.accordionPannel)}
-      sx={{ background: 'transparent', mb: 1 }}
+      sx={{ background: 'transparent', mb: 1, boxShadow: 'none' }}
     >
       <AccordionSummary
         expandIcon={<FaChevronUp style={{ color: '#FFF' }} />}
         aria-controls={`${data.accordionPannel}bh-content`}
         id={`${data.accordionPannel}bh-header`}
-        sx={{ backgroundColor: 'rgba(114, 114, 243, 1)' }}
+        sx={{
+          backgroundColor: 'rgba(114, 114, 243, 1)',
+          borderRadius:
+            expanded === data.accordionPannel ? '6px 6px 0 0' : '6px',
+        }}
       >
         <div
           style={{
@@ -51,6 +55,8 @@ const ExperiencesAccordion = ({
           backgroundColor: 'rgba(114, 114, 243, 0.3)',
           color: 'text.white',
           p: 3,
+          borderRadius:
+            expanded === data.accordionPannel ? ' 0 0 6px 6px' : '6px',
         }}
       >
         <div style={{ color: '#ccc' }}>
