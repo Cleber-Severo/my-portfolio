@@ -1,13 +1,8 @@
 import * as React from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import Typography from '@mui/material/Typography';
-import { FaChevronUp } from '@react-icons/all-files/fa/FaChevronUp';
-import { FaMapMarkerAlt } from '@react-icons/all-files/fa/FaMapMarkerAlt';
 import useExperiencesData from '../hooks/useExperiencesData';
 import './styles/Experiences.css';
-import { Chip } from '@mui/material';
+import ExperiencesAccordion from './ExperiencesAccordion';
+import { IExperience } from '../types/Experiences';
 
 const Experiences = () => {
   const [expanded, setExpanded] = React.useState<string | false>(false);
@@ -23,58 +18,15 @@ const Experiences = () => {
     <section id="resume">
       <h2>Experiência</h2>
       <div>
-        {experiences.map((item) => (
-          <Accordion
-            expanded={expanded === item.accordionPannel}
-            onChange={handleChange(item.accordionPannel)}
-            sx={{ background: 'transparent', mb: 1 }}
-          >
-            <AccordionSummary
-              expandIcon={<FaChevronUp style={{ color: '#FFF' }} />}
-              aria-controls={`${item.accordionPannel}bh-content`}
-              id={`${item.accordionPannel}bh-header`}
-              sx={{ backgroundColor: 'rgba(114, 114, 243, 1)' }}
-            >
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  width: '100%',
-                  padding: '0 12px',
-                  color: 'white',
-                }}
-              >
-                <Typography component="span" sx={{ fontWeight: '600' }}>
-                  {item.jobPosition}
-                </Typography>
-                <Typography
-                  component="span"
-                  sx={{ color: 'text.white', fontWeight: '600' }}
-                >
-                  {item.time}
-                </Typography>
-              </div>
-            </AccordionSummary>
-            <AccordionDetails
-              sx={{
-                backgroundColor: 'rgba(114, 114, 243, 0.3)',
-                color: 'text.white',
-                p: 3,
-              }}
-            >
-              <div style={{ color: '#ccc' }}>
-                <FaMapMarkerAlt style={{ marginRight: '6px' }} />
-                {item.place}
-              </div>
-              <Typography sx={{ color: '#FFF', my: '1rem', fontWeight: '500', }}>
-                {item.description}
-              </Typography>
-              {item.tags.map((tag) => (
-                <Chip label={tag} sx={{color: '#FFF', ml: 0.5}}/>
-              ))}
-            </AccordionDetails>
-          </Accordion>
-        ))}
+        {experiences.map((experience: IExperience) => (
+            <ExperiencesAccordion 
+              data={experience} 
+              expanded={expanded} 
+              handleChange={handleChange} 
+              key={experience.id} 
+            />
+          )
+        )}
       </div>
     </section>
   );
