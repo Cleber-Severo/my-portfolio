@@ -10,7 +10,8 @@ export interface IExperience {
 
 export interface IExperiencesAccordionProps {
   expanded: string | boolean;
-  handleChange: (panel: string) => 
-    (_: React.SyntheticEvent, isExpanded: boolean) => void;
+  accordionToggleOpen: (
+    panel: string
+  ) => (_: React.SyntheticEvent, isExpanded: boolean) => void;
   data: IExperience;
 }
