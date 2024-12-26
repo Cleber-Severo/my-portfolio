@@ -32,7 +32,7 @@ export const Animation = () => {
             },
             move: {
               enable: true,
-              speed: 0.4,
+              speed: 0.5,
               direction: 'none',
               outModes: {
                 default: 'bounce',
@@ -42,7 +42,7 @@ export const Animation = () => {
               density: {
                 enable: true,
               },
-              value: 80,
+              value: 120,
             },
             opacity: {
               value: 0.7,

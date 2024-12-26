@@ -16,7 +16,7 @@ const App = () => {
       <main>
         <Hero />
         <Projects />
-      <Experiences />
+        <Experiences />
         <section id="contact">
           <h1>Contact me section</h1>
         </section>
