@@ -1,32 +1,23 @@
-import * as React from 'react';
-import useExperiencesData from '../hooks/useExperiencesData';
 import './styles/Experiences.css';
 import ExperiencesAccordion from './ExperiencesAccordion';
 import { IExperience } from '../types/Experiences';
+import useExperiences from '../hooks/useExperiences';
 
 const Experiences = () => {
-  const [expanded, setExpanded] = React.useState<string | false>(false);
-
-  const { experiences } = useExperiencesData();
-
-  const handleChange =
-    (panel: string) => (_: React.SyntheticEvent, isExpanded: boolean) => {
-      setExpanded(isExpanded ? panel : false);
-    };
+  const { expanded, experiences, accordionToggleOpen } = useExperiences()
 
   return (
     <section id="resume">
       <h2>Experiência</h2>
       <div>
         {experiences.map((experience: IExperience) => (
-            <ExperiencesAccordion 
-              data={experience} 
-              expanded={expanded} 
-              handleChange={handleChange} 
-              key={experience.id} 
-            />
-          )
-        )}
+          <ExperiencesAccordion
+            data={experience}
+            expanded={expanded}
+            accordionToggleOpen={accordionToggleOpen}
+            key={experience.id}
+          />
+        ))}
       </div>
     </section>
   );

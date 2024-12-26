@@ -10,13 +10,14 @@ import { IExperiencesAccordionProps } from '../types/Experiences';
 
 const ExperiencesAccordion = ({
   expanded,
-  handleChange,
+  accordionToggleOpen,
   data,
 }: IExperiencesAccordionProps) => {
+
   return (
     <Accordion
       expanded={expanded === data.accordionPannel}
-      onChange={handleChange(data.accordionPannel)}
+      onChange={accordionToggleOpen(data.accordionPannel)}
       sx={{ background: 'transparent', mb: 1 }}
     >
       <AccordionSummary
