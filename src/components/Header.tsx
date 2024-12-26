@@ -1,29 +1,15 @@
 import { SiGithub } from '@react-icons/all-files/si/SiGithub';
 import { SiLinkedin } from '@react-icons/all-files/si/SiLinkedin';
 import { FiTerminal } from '@react-icons/all-files/fi/FiTerminal';
-import React, { useEffect, useState } from 'react';
 
-import './styles/Header.css'
+import './styles/Header.css';
+import { IHeaderProps } from '../types/Header';
+import useHeader from '../hooks/useHeader';
 
-interface IHeaderProps {
-  containerRef: React.MutableRefObject<HTMLDivElement | null>;
-}
+
 
 const Header = ({ containerRef }: IHeaderProps) => {
-  const [isScrolled, setIsScrolled] = useState<boolean>(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-
-        setIsScrolled(window.scrollY > 130);
-      
-    };
-    window?.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window?.removeEventListener('scroll', handleScroll);
-    };
-  }, [containerRef]);
+  const { isScrolled } = useHeader({ containerRef })
 
   return (
     <header className={isScrolled ? 'scrolled' : ''}>
