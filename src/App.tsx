@@ -1,12 +1,12 @@
 import './App.css';
-import { Animation } from './components/Animation';
-import Contact from './components/Contact';
-import Experiences from './components/Experiences';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Projects from './components/Projects';
-import { useApp } from './hooks/useApp';
+import { Animation } from './components/Animation.tsx';
+import Contact from './components/Contact.tsx';
+import Experiences from './components/Experiences.tsx';
+import Footer from './components/Footer.tsx';
+import Header from './components/Header.tsx';
+import Hero from './components/Hero.tsx';
+import Projects from './components/Projects.tsx';
+import { useApp } from './hooks/useApp.ts';
 
 const App = () => {
   const { containerRef } = useApp();
