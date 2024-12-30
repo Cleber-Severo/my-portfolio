@@ -2,13 +2,14 @@ import './styles/Experiences.css';
 import ExperiencesAccordion from './ExperiencesAccordion';
 import { IExperience } from '../types/Experiences';
 import useExperiences from '../hooks/useExperiences';
+import SectionTitle from './SectionTitle';
 
 const Experiences = () => {
   const { expanded, experiences, accordionToggleOpen } = useExperiences()
 
   return (
     <section id="resume">
-      <h2>Experiência</h2>
+      <SectionTitle text='Experiência' />
       <div>
         {experiences.map((experience: IExperience) => (
           <ExperiencesAccordion

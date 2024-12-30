@@ -8,14 +8,6 @@
   padding: 20px;
 }
 
-#projects > h2 {
-  font-size: 24px;
-  font-weight: 800;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-  letter-spacing: 6px;
-}
-
 div.projects-wrapper {
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 350px));

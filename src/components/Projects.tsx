@@ -1,5 +1,6 @@
 import useProjectsData from '../hooks/useProjectsData';
 import ProjectCard from './ProjectCard';
+import SectionTitle from './SectionTitle';
 
 import './styles/Projects.css';
 
@@ -8,7 +9,7 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <h2>projetos</h2>
+      <SectionTitle text='Projetos' />
       <div className="projects-wrapper">
         {listProjects.map((project) => (
           <ProjectCard key={project.id} {...project} />

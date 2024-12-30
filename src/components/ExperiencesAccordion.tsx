@@ -8,11 +8,7 @@ import './styles/Experiences.css';
 import { Chip } from '@mui/material';
 import { IExperiencesAccordionProps } from '../types/Experiences';
 
-const ExperiencesAccordion = ({
-  expanded,
-  accordionToggleOpen,
-  data,
-}: IExperiencesAccordionProps) => {
+const ExperiencesAccordion = ({ expanded, accordionToggleOpen, data, }: IExperiencesAccordionProps) => {
 
   return (
     <Accordion
