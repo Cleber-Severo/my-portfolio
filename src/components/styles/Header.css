@@ -29,7 +29,46 @@ header > a.logo {
 nav {
   display: flex;
   align-items: center;
-    font-size: 16px;
+  font-size: 16px;
+}
+
+.toggle-nav {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+  header div {
+    display: none;
+  }
+  
+  .toggle-nav {
+    display: initial
+  }
+
+  nav {
+    background-color: var(--bg-primary-400);
+
+    flex-direction: column;
+    gap: 10px;
+
+    position: absolute;
+
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    top: calc(var(--header-height) + 1rem);
+    right: 0;
+    width: 65%;
+
+    transition: all .25s ease;
+  }
+
+  nav.show {
+    height: 120px;
+    overflow: visible;
+    padding: 0.5rem;
+  }
 }
 
 header.scrolled {

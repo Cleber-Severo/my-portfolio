@@ -3,7 +3,10 @@ import { IHeaderProps } from '../types/Header';
 
 const useHeader = ({ containerRef }: IHeaderProps) => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
+  const [showNav, setShowNav] = useState<boolean>(false)
 
+  const toggleNav = () => setShowNav(!showNav)
+  
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 130);
@@ -15,7 +18,7 @@ const useHeader = ({ containerRef }: IHeaderProps) => {
     };
   }, [containerRef]);
 
-  return { isScrolled };
+  return { isScrolled, toggleNav, showNav };
 };
 
 export default useHeader;

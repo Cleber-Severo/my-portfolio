@@ -9,6 +9,12 @@
   z-index: 1; /* Ensure this content appears above the particles */
 }
 
+@media screen and (max-width: 760px) {
+  .container { 
+    overflow: hidden;
+  }
+}
+
 #tsparticles {
   position: absolute;
   top: 0;
@@ -19,24 +25,32 @@
   background: none; /* Ensure transparency */
 }
 
-main, header {
+main,
+header {
   margin: 0 auto;
   padding: 0 16rem;
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 1640px){   
-  main, header {
+@media screen and (max-width: 1640px) {
+  main,
+  header {
     padding: 0 10rem;
   }
 }
 
-@media screen and (max-width: 1440px){   
-  main, header {
+@media screen and (max-width: 1440px) {
+  main,
+  header {
     padding: 0 6rem;
   }
 }
-
+@media screen and (max-width: 760px) {
+  main,
+  header {
+    padding: 0 1rem;
+  }
+}
 
 header,
 .container {
@@ -48,11 +62,16 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-   scroll-snap-align: start;
+  scroll-snap-align: start;
   scroll-snap-stop: always;
 
-
   min-height: 650px;
+}
+
+@media screen and (max-width: 760px) {
+  section {
+  min-height: auto;
+}
 }
 
 main {
