@@ -2,6 +2,7 @@ import './App.css';
 import { Animation } from './components/Animation';
 import Contact from './components/Contact';
 import Experiences from './components/Experiences';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
@@ -19,6 +20,7 @@ const App = () => {
         <Projects />
         <Experiences />
         <Contact />
+        <Footer />
       </main>
     </div>
   );
