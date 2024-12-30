@@ -1,0 +1,57 @@
+section#contact {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#contact .card-contact {
+  background-color: var(--bg-primary-400);
+  padding: 1rem 2rem 0 2rem;
+}
+
+section#contact .card-contact a {
+  color: white;
+  text-decoration: none;
+}
+
+section#contact .card-contact a:hover {
+  color: var(--bg-primary-main);
+}
+
+section#contact .card-contact a div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: .6rem;
+  
+}
+
+section#contact .card-contact a div svg {
+  font-size: 2rem;
+}
+
+
+section#contact .card-contact div.contact-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+section#contact .card-contact div.contact-actions button {
+  background-color: #3333e6;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+section#contact .card-contact div.contact-actions button:hover {
+  background-color: #7272f3;
+}
+
+
+section#contact .card-contact div.contact-actions button svg {
+  font-size: 1.4rem;
+  margin-left: 4px;
+}

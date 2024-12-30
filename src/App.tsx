@@ -1,5 +1,6 @@
 import './App.css';
 import { Animation } from './components/Animation';
+import Contact from './components/Contact';
 import Experiences from './components/Experiences';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -17,9 +18,7 @@ const App = () => {
         <Hero />
         <Projects />
         <Experiences />
-        <section id="contact">
-          <h1>Contact me section</h1>
-        </section>
+        <Contact />
       </main>
     </div>
   );
