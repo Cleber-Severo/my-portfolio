@@ -41,13 +41,15 @@ nav {
   header div {
     display: none;
   }
-  
+
   .toggle-nav {
-    display: initial
+    display: initial;
   }
 
   nav {
-    background-color: var(--bg-primary-400);
+    background-color: transparent;
+    backdrop-filter: blur(25px);
+    box-shadow: 0 4px 6px rgba(3, 3, 3, 0.3); /* Subtle black shadow */ 
 
     flex-direction: column;
     gap: 10px;
@@ -61,7 +63,7 @@ nav {
     right: 0;
     width: 65%;
 
-    transition: all .25s ease;
+    transition: all 0.25s ease;
   }
 
   nav.show {
