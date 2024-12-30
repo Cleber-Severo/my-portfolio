@@ -21,7 +21,7 @@ const ExperiencesAccordion = ({ expanded, accordionToggleOpen, data, }: IExperie
         aria-controls={`${data.accordionPannel}bh-content`}
         id={`${data.accordionPannel}bh-header`}
         sx={{
-          backgroundColor: 'rgba(114, 114, 243, 1)',
+          backgroundColor: 'var(--bg-primary-main)',
           borderRadius:
             expanded === data.accordionPannel ? '6px 6px 0 0' : '6px',
         }}
@@ -48,7 +48,7 @@ const ExperiencesAccordion = ({ expanded, accordionToggleOpen, data, }: IExperie
       </AccordionSummary>
       <AccordionDetails
         sx={{
-          backgroundColor: 'rgba(114, 114, 243, 0.3)',
+          backgroundColor: 'var(--bg-primary-300)',
           color: 'text.white',
           p: 3,
           borderRadius:

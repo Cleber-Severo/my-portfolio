@@ -56,5 +56,5 @@ section {
 }
 
 main {
-  background-color: rgba(114, 114, 243, 0.2);
+  background-color: var(--bg-primary-200);
 }

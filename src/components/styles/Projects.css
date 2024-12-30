@@ -77,7 +77,7 @@ div.projects-wrapper {
 }
 
 .project-card article div svg:hover {
-  color: rgba(114, 114, 243, 1);
+  color: var(--bg-primary-main);
 }
 
 .project-card footer {

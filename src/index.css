@@ -137,6 +137,11 @@ table {
   --header-height: 3rem;
   --defaul-bg-dark: #121821;
   --default-main-text: #FFFFFF;
+  --bg-primary-main: backgroundColor: rgba(114, 114, 243, 1);
+  --bg-primary-100: backgroundColor: rgba(114, 114, 243, 0.1);
+  --bg-primary-200: backgroundColor: rgba(114, 114, 243, 0.2);
+  --bg-primary-300: backgroundColor: rgba(114, 114, 243, 0.3);
+  --bg-primary-400: backgroundColor: rgba(114, 114, 243, 0.4);
 }
 
 html,
@@ -150,7 +155,7 @@ body {
 body {
   background: radial-gradient(
     ellipse 90% 90% at 50% 10%,
-    rgba(114, 114, 243, 0.4),
+    var(--bg-primary-400),
     transparent
   );
   background-size: cover;
