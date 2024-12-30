@@ -37,7 +37,17 @@ nav {
   cursor: pointer;
 }
 
+header.scrolled {
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 6px rgba(3, 3, 3, 0.3); /* Subtle black shadow */
+}
+
+
 @media screen and (max-width: 760px) {
+  header.scrolled {
+    background-color: var(--bg-primary-600);
+  }
+
   header div {
     display: none;
   }
@@ -47,9 +57,9 @@ nav {
   }
 
   nav {
-    background-color: transparent;
-    backdrop-filter: blur(25px);
-    box-shadow: 0 4px 6px rgba(3, 3, 3, 0.3); /* Subtle black shadow */ 
+    background-color: var(--bg-primary-600);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 6px rgba(3, 3, 3, 0.3); /* Subtle black shadow */
 
     flex-direction: column;
     gap: 10px;
@@ -71,11 +81,6 @@ nav {
     overflow: visible;
     padding: 0.5rem;
   }
-}
-
-header.scrolled {
-  backdrop-filter: blur(15px);
-  box-shadow: 0 4px 6px rgba(3, 3, 3, 0.3); /* Subtle black shadow */
 }
 
 nav a {
