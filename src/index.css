@@ -135,7 +135,7 @@ table {
 :root {
   --default-font-family: "Nunito Sans", sans-serif;
   --header-height: 3rem;
-  --defaul-bg-dark: #121821;
+  --default-bg-dark: #121821;
   --default-main-text: #FFFFFF;
   --bg-primary-main: rgba(114, 114, 243, 1);
   --bg-primary-100: rgba(114, 114, 243, 0.1);
@@ -165,7 +165,7 @@ body {
 }
 
 html {
-  background-color: var(--defaul-bg-dark);
+  background-color: var(--default-bg-dark);
   color: var(--default-main-text);
   font-family: var(--default-font-family);
     scroll-behavior: smooth;
