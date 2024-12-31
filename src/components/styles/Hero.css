@@ -17,6 +17,17 @@ section#hero {
   height: 100vh;
 }
 
+@media screen and (max-width: 760px) {
+  section#hero {
+    padding: 0 1.2rem;
+    margin-top: -60px;
+  }
+
+  section#hero img {
+    display: none;
+  }
+}
+
 section#hero > div {
   display: flex;
   flex-direction: column;
@@ -45,6 +56,14 @@ section#hero button {
   width: 45%;
 }
 
+@media screen and (max-width: 760px) {
+  section#hero button {
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    width: 95%;
+  }
+}
+
 section#hero button a {
   color: white;
 
@@ -68,6 +87,13 @@ section#hero h2:nth-of-type(1) {
   font-size: 1.1rem;
   font-weight: 600;
 }
+
+@media screen and (max-width: 760px) {
+  section#hero h2:nth-of-type(1) {
+    font-size: 0.8rem;
+  }
+}
+
 section#hero h2:nth-of-type(2) {
   font-size: 2.4rem;
 }
@@ -104,6 +130,27 @@ section#hero h2:nth-of-type(2) {
   }
   100% {
     border-right-color: transparent;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .typing-container {
+    font-size: 2rem;
+    animation: typing 6s steps(15, end) infinite,
+      blink-cursor 0.8s step-end infinite;
+      margin-bottom: 2rem;
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 214px; /* Adjust to match the full width of your text */
+    }
+    100% {
+      width: 0;
+    }
   }
 }
 
