@@ -7,12 +7,19 @@ import { FaTimes } from '@react-icons/all-files/fa/FaTimes';
 import './styles/Header.css';
 import { IHeaderProps } from '../types/Header';
 import useHeader from '../hooks/useHeader';
+import classNames from 'classnames';
 
 const Header = ({ containerRef }: IHeaderProps) => {
   const { isScrolled, toggleNav, showNav } = useHeader({ containerRef });
 
   return (
-    <header className={isScrolled ? 'scrolled' : ''}>
+    <header 
+      // className={isScrolled ? 'scrolled' : '' + showNav ? 'header-show-nav' : ''}
+      className={classNames({
+        'scrolled': isScrolled,
+        'header-show-nav': showNav
+      })}
+    >
       <a href="#hero" className="logo">
         <FiTerminal />
         Cléber Severo

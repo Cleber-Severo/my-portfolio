@@ -42,6 +42,9 @@ header.scrolled {
   box-shadow: 0 4px 6px rgba(3, 3, 3, 0.3); /* Subtle black shadow */
 }
 
+header.header-show-nav {
+  background-color: var(--bg-primary-600);
+}
 
 @media screen and (max-width: 760px) {
   header.scrolled {
