@@ -6,3 +6,22 @@ section#resume {
 
   padding: 0 250px;
 } 
+
+@media screen and (max-width: 1440px) {
+  section#resume {
+      margin: 5rem 0;
+      padding: 0 120px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  section#resume {
+      padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  section#resume {
+      padding: 0 10px
+  }
+}
