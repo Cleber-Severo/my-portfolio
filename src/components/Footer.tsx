@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = date.getFullYear();
 
   return (
-    <footer>
+    <footer className='my-portfolio-footer'>
       <h3>&copy; {currentYear} Todos Direitos Reservados</h3>
       <h3>Desenvolvido por: Cléber Severo</h3>
     </footer>
