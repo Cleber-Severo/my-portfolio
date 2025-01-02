@@ -23,35 +23,62 @@ section#contact .card-contact a div {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: .6rem;
-  
+  margin-bottom: 0.6rem;
 }
 
 section#contact .card-contact a div svg {
   font-size: 2rem;
 }
 
-
 section#contact .card-contact div.contact-actions {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
   width: 100%;
 }
 
 section#contact .card-contact div.contact-actions button {
-  background-color: #3333e6;
-  font-size: 0.7rem;
   font-weight: 700;
-  text-transform: uppercase;
+  background-color: #5b5bf1;
+  color: #fff;
+
+  border-radius: 25px;
+  border: none;
+
+  cursor: pointer;
+  padding: 1rem 2rem;
+
+  margin-top: 1.2rem;
 }
 
 section#contact .card-contact div.contact-actions button:hover {
   background-color: #7272f3;
 }
 
+section#contact .card-contact div.contact-actions button a {
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  text-decoration: none;
+}
 
 section#contact .card-contact div.contact-actions button svg {
   font-size: 1.4rem;
   margin-left: 4px;
+}
+
+@media screen and (max-width: 760px) {
+  section#contact .card-contact div.contact-actions button {
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    width: 95%;
+  }
+
+  section#contact .card-contact {
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+  }
 }

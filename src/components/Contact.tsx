@@ -1,4 +1,4 @@
-import { Button, Card, CardContent } from '@mui/material';
+import { Card, CardContent } from '@mui/material';
 import { SiGithub } from '@react-icons/all-files/si/SiGithub';
 import { SiLinkedin } from '@react-icons/all-files/si/SiLinkedin';
 import { SiGmail } from '@react-icons/all-files/si/SiGmail';
@@ -33,14 +33,14 @@ const Contact = () => {
             </div>
           </a>
           <div className="contact-actions">
-            <a 
-              href="https://drive.google.com/file/d/1PuunEYpr8j5Av_FJFOroKGiaj7o5hYgB/view?usp=sharing"
-              target='_blank'  
-            >
-              <Button color="primary" variant="contained">
+            <button>
+              <a
+                href="https://drive.google.com/file/d/1PuunEYpr8j5Av_FJFOroKGiaj7o5hYgB/view?usp=sharing"
+                target="_blank"
+              >
                 Download cv <HiDownload />
-              </Button>
-            </a>
+              </a>
+            </button>
           </div>
         </CardContent>
       </Card>
