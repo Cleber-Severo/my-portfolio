@@ -24,4 +24,9 @@ section#resume {
   section#resume {
       padding: 0 10px
   }
+  
+  section#resume span.MuiAccordionSummary-content.MuiAccordionSummary-contentGutters.css-yfrx4k-MuiAccordionSummary-content div {
+    flex-direction: column;
+  }
+
 }
