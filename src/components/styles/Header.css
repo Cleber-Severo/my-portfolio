@@ -46,6 +46,20 @@ header.header-show-nav {
   background-color: var(--bg-primary-600);
 }
 
+header div {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+header div span {
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
 @media screen and (max-width: 760px) {
   header.scrolled {
     background-color: var(--bg-primary-600);

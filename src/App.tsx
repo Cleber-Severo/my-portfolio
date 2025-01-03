@@ -7,6 +7,7 @@ import Header from './components/Header.tsx';
 import Hero from './components/Hero.tsx';
 import Projects from './components/Projects.tsx';
 import { useApp } from './hooks/useApp.ts';
+import './i18n/config.ts';
 
 const App = () => {
   const { containerRef } = useApp();

@@ -7,11 +7,14 @@ import { HiDownload } from '@react-icons/all-files/hi/HiDownload';
 import SectionTitle from './SectionTitle';
 
 import './styles/Contact.css';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+    const { t } = useTranslation();
+  
   return (
     <section id="contact">
-      <SectionTitle text="Contato" />
+      <SectionTitle text={t('contact.title')} />
       <Card className="card-contact">
         <CardContent>
           <a href="mailto:clebersevero1998@gmail.com" target="_blank">

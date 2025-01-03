@@ -1,23 +1,23 @@
-import ProgrammingHero from '../assets/images/hero.png'
+import ProgrammingHero from '../assets/images/hero.png';
 import { IoIosArrowDown } from '@react-icons/all-files/io/IoIosArrowDown';
 import { IoMdArrowRoundForward } from '@react-icons/all-files/io/IoMdArrowRoundForward';
 
 import './styles/Hero.css';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="hero">
       <div>
-        <h2 style={{ letterSpacing: '12px' }}>Olá, meu nome é</h2>
+        <h2 style={{ letterSpacing: '12px' }}>{t('hero.saudation')}</h2>
         <div className="typing-container">Cléber Severo</div>
-        <p>
-          Desenvolvedor de software com experiência em criar soluções ágeis e
-          escaláveis que transformam ideias em resultados.
-        </p>
-        <p>Seja Bem-vindo ao meu portfólio</p>
+        <p>{t('hero.description')}</p>
+        <p>{t('hero.welcome')}</p>
         <button>
           <a href="#contact">
-            Contato <IoMdArrowRoundForward />
+            {t('hero.contactBtn')} <IoMdArrowRoundForward />
           </a>
         </button>
       </div>

@@ -10,14 +10,14 @@ import useHeader from '../hooks/useHeader';
 import classNames from 'classnames';
 
 const Header = ({ containerRef }: IHeaderProps) => {
-  const { isScrolled, toggleNav, showNav } = useHeader({ containerRef });
+  const { isScrolled, toggleNav, showNav, t, i18n, toggleLanguage } = useHeader({containerRef});
+ 
 
   return (
-    <header 
-      // className={isScrolled ? 'scrolled' : '' + showNav ? 'header-show-nav' : ''}
+    <header
       className={classNames({
-        'scrolled': isScrolled,
-        'header-show-nav': showNav
+        scrolled: isScrolled,
+        'header-show-nav': showNav,
       })}
     >
       <a href="#hero" className="logo">
@@ -26,11 +26,12 @@ const Header = ({ containerRef }: IHeaderProps) => {
       </a>
       <nav className={showNav ? 'show' : ''}>
         <a href="#hero">Home</a>
-        <a href="#projects">Projetos</a>
-        <a href="#resume">Experiência</a>
-        <a href="#contact">Contato</a>
+        <a href="#projects">{t('header.projects')}</a>
+        <a href="#resume">{t('header.experience')}</a>
+        <a href="#contact">{t('header.contact')}</a>
       </nav>
       <div>
+        <span onClick={toggleLanguage} className='internacionalization-btn'>{i18n.language === 'en' ? 'EN' : 'PT-BR'}</span>
         <a
           href="https://www.linkedin.com/in/cleber-severo/"
           style={{ color: 'white' }}
@@ -46,10 +47,11 @@ const Header = ({ containerRef }: IHeaderProps) => {
           <SiGithub style={{ fontSize: '1.4rem' }} />
         </a>
       </div>
-      {showNav 
-        ?  <FaTimes className="toggle-nav" onClick={toggleNav} />
-        :  <FaBars className="toggle-nav" onClick={toggleNav} />
-      }
+      {showNav ? (
+        <FaTimes className="toggle-nav" onClick={toggleNav} />
+      ) : (
+        <FaBars className="toggle-nav" onClick={toggleNav} />
+      )}
     </header>
   );
 };
