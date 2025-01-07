@@ -7,7 +7,7 @@ section#contact {
 
 section#contact .card-contact {
   background-color: var(--bg-primary-400);
-  padding: 1rem 2rem 0 2rem;
+  padding: 1rem 8rem 0 8rem ;
 }
 
 section#contact .card-contact a {
@@ -22,7 +22,7 @@ section#contact .card-contact a:hover {
 section#contact .card-contact a div {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 1.2rem;
   margin-bottom: 0.6rem;
 }
 
@@ -34,6 +34,8 @@ section#contact .card-contact div.contact-actions {
   display: flex;
   justify-content: center;
   width: 100%;
+
+  margin-top: 1rem;
 }
 
 section#contact .card-contact div.contact-actions button {
