@@ -10,7 +10,7 @@ const useExperiencesData = () => {
       jobPosition: t('experiences.pannels.systemDeveloper.title'),
       place: 'Amaro Contact Center',
       description: t('experiences.pannels.systemDeveloper.description'),
-      time: '09/2023 - Até o momento',
+      time: t('experiences.pannels.systemDeveloper.time'),
       tags: ['React', 'JQuery', 'NodeJs', 'Express', 'SQL', 'Docker'],
     },
     {
