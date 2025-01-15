@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "noEmit": true, // Prevents emitting output files (Jest doesn't need them)
+    "isolatedModules": true // Required for TypeScript's module system to work with Jest
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}
