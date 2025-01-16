@@ -10,8 +10,11 @@ import './styles/Contact.css';
 import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
-    const { t } = useTranslation();
-  
+  const { t, i18n } = useTranslation();
+  const cvUrl =i18n.language === 'en'
+      ? 'https://drive.google.com/file/d/1rjog3sek9msA23DDUed27e-mA-HMjV95/view'
+      : 'https://drive.google.com/file/d/1PuunEYpr8j5Av_FJFOroKGiaj7o5hYgB/view?usp=sharing';
+
   return (
     <section id="contact">
       <SectionTitle text={t('contact.title')} />
@@ -37,10 +40,7 @@ const Contact = () => {
           </a>
           <div className="contact-actions">
             <button>
-              <a
-                href="https://drive.google.com/file/d/1PuunEYpr8j5Av_FJFOroKGiaj7o5hYgB/view?usp=sharing"
-                target="_blank"
-              >
+              <a href={cvUrl} target="_blank">
                 Download cv <HiDownload />
               </a>
             </button>

@@ -10,8 +10,10 @@ import useHeader from '../hooks/useHeader';
 import classNames from 'classnames';
 
 const Header = ({ containerRef }: IHeaderProps) => {
-  const { isScrolled, toggleNav, showNav, t, i18n, toggleLanguage } = useHeader({containerRef});
- 
+  const { isScrolled, toggleNav, showNav, t, i18n, toggleLanguage, linkedinUrl } = useHeader(
+    { containerRef }
+  );
+
 
   return (
     <header
@@ -31,9 +33,11 @@ const Header = ({ containerRef }: IHeaderProps) => {
         <a href="#contact">{t('header.contact')}</a>
       </nav>
       <div>
-        <span onClick={toggleLanguage} className='internacionalization-btn'>{i18n.language === 'en' ? 'EN' : 'PT-BR'}</span>
+        <span onClick={toggleLanguage} className="internacionalization-btn">
+          {i18n.language === 'en' ? 'EN' : 'PT-BR'}
+        </span>
         <a
-          href="https://www.linkedin.com/in/cleber-severo/"
+          href={linkedinUrl}
           style={{ color: 'white' }}
           target="_blank"
         >
