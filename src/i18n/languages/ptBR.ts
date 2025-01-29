@@ -49,7 +49,7 @@ export const ptBrTransaction = {
     },
     footer: {
       copyright: 'Todos direitos reservados',
-      developedBy: 'Desenvololvido por',
+      developedBy: 'Desenvolvido por',
     },
   },
 };
