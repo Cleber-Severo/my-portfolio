@@ -4,9 +4,9 @@ import { SiLinkedin } from '@react-icons/all-files/si/SiLinkedin';
 import { SiGmail } from '@react-icons/all-files/si/SiGmail';
 import { HiDownload } from '@react-icons/all-files/hi/HiDownload';
 
-import SectionTitle from './SectionTitle';
+import SectionTitle from '../common/SectionTitle';
 
-import './styles/Contact.css';
+import '../styles/Contact.css';
 import { useTranslation } from 'react-i18next';
 
 const Contact = () => {

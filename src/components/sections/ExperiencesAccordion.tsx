@@ -4,9 +4,9 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import { FaChevronUp } from '@react-icons/all-files/fa/FaChevronUp';
 import { FaMapMarkerAlt } from '@react-icons/all-files/fa/FaMapMarkerAlt';
-import './styles/Experiences.css';
+import '../styles/Experiences.css';
 import { Chip } from '@mui/material';
-import { IExperiencesAccordionProps } from '../types/Experiences';
+import { IExperiencesAccordionProps } from '../../types/Experiences';
 
 const ExperiencesAccordion = ({ expanded, accordionToggleOpen, data, }: IExperiencesAccordionProps) => {
 

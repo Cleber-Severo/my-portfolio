@@ -1,11 +1,11 @@
 import './App.css';
-import { Animation } from './components/Animation.tsx';
-import Contact from './components/Contact.tsx';
-import Experiences from './components/Experiences.tsx';
-import Footer from './components/Footer.tsx';
-import Header from './components/Header.tsx';
-import Hero from './components/Hero.tsx';
-import Projects from './components/Projects.tsx';
+import { Animation } from './components/common/Animation.tsx';
+import Contact from './components/sections/Contact.tsx';
+import Experiences from './components/sections/Experiences.tsx';
+import Footer from './components/layout/Footer.tsx';
+import Header from './components/layout/Header.tsx';
+import Hero from './components/sections/Hero.tsx';
+import Projects from './components/sections/Projects.tsx';
 import { useApp } from './hooks/useApp.ts';
 import './i18n/config.ts';
 

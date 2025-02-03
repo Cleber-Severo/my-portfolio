@@ -1,8 +1,8 @@
-import './styles/Experiences.css';
+import '../styles/Experiences.css';
 import ExperiencesAccordion from './ExperiencesAccordion';
-import { IExperience } from '../types/Experiences';
-import useExperiences from '../hooks/useExperiences';
-import SectionTitle from './SectionTitle';
+import { IExperience } from '../../types/Experiences';
+import useExperiences from '../../hooks/useExperiences';
+import SectionTitle from '../common/SectionTitle';
 import { useTranslation } from 'react-i18next';
 
 const Experiences = () => {

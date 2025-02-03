@@ -1,7 +1,7 @@
 import { FiLink } from '@react-icons/all-files/fi/FiLink';
 
 import { FiGithub } from '@react-icons/all-files/fi/FiGithub';
-import { IProjectCard } from '../types/Projects';
+import { IProjectCard } from '../../types/Projects';
 
 
 

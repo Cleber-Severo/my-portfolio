@@ -1,9 +1,9 @@
 import { Grid2 } from '@mui/material';
-import useProjectsData from '../hooks/useProjectsData';
-import ProjectCard from './ProjectCard';
-import SectionTitle from './SectionTitle';
+import useProjectsData from '../../hooks/useProjectsData';
+import ProjectCard from '../common/ProjectCard';
+import SectionTitle from '../common/SectionTitle';
 
-import './styles/Projects.css';
+import '../styles/Projects.css';
 import { useTranslation } from 'react-i18next';
 
 const Projects = () => {

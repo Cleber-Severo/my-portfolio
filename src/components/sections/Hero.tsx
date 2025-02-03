@@ -1,8 +1,8 @@
-import ProgrammingHero from '../assets/images/hero.png';
+import ProgrammingHero from '../../assets/images/hero.png';
 import { IoIosArrowDown } from '@react-icons/all-files/io/IoIosArrowDown';
 import { IoMdArrowRoundForward } from '@react-icons/all-files/io/IoMdArrowRoundForward';
 
-import './styles/Hero.css';
+import '../styles/Hero.css'
 import { useTranslation } from 'react-i18next';
 
 const Hero = () => {

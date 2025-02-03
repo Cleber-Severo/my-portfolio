@@ -4,9 +4,10 @@ import { FiTerminal } from '@react-icons/all-files/fi/FiTerminal';
 import { FaBars } from '@react-icons/all-files/fa/FaBars';
 import { FaTimes } from '@react-icons/all-files/fa/FaTimes';
 
-import './styles/Header.css';
-import { IHeaderProps } from '../types/Header';
-import useHeader from '../hooks/useHeader';
+import '../styles/Header.css' 
+
+import { IHeaderProps } from '../../types/Header';
+import useHeader from '../../hooks/useHeader';
 import classNames from 'classnames';
 
 const Header = ({ containerRef }: IHeaderProps) => {
