@@ -15,7 +15,6 @@ const Header = ({ containerRef }: IHeaderProps) => {
     { containerRef }
   );
 
-
   return (
     <header
       className={classNames({
