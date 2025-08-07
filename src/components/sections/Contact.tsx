@@ -11,9 +11,9 @@ import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
   const { t, i18n } = useTranslation();
-  const cvUrl =i18n.language === 'en'
-      ? 'https://drive.google.com/file/d/1rjog3sek9msA23DDUed27e-mA-HMjV95/view'
-      : 'https://drive.google.com/file/d/1PuunEYpr8j5Av_FJFOroKGiaj7o5hYgB/view?usp=sharing';
+  const cvUrl = i18n.language === 'en'
+      ? 'https://drive.google.com/file/d/1_42BYfS5JvLRoIRPZgtpoL_3ML6N03n_/view?usp=drive_link'
+      : 'https://drive.google.com/file/d/1ESnCCzn0KICJKGnZFUnVEuc3JYw1uVn2/view?usp=drive_link';
 
   return (
     <section id="contact">
